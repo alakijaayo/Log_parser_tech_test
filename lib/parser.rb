@@ -23,7 +23,7 @@ if log_file_path
   reader = Reader.new(log_file_path)
   reader.call
 
-  parser = Parser.new(reader.log_entries)
+  parser = Parser.new(reader.entries)
   parser.show_most_popular
   puts "-----------"
   parser.show_most_popular(unique: true)
